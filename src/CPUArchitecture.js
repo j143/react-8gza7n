@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
+import './style.css';
+
 const CPUArchitectureAnimation = () => {
   const [step, setStep] = useState(0);
   const [speed, setSpeed] = useState(2);
