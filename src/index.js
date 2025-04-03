@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client';
 
 import App from './App';
 import CPUArchitectureAnimation from './CPUArchitecture';
+import LinuxKernelVsUbuntu from './LinuxKernelVsUbuntu';
 
 
 const rootElement = document.getElementById('root');
@@ -12,5 +13,6 @@ root.render(
   <StrictMode>
     {/* <App /> */}
     <CPUArchitectureAnimation />
+    <LinuxKernelVsUbuntu />
   </StrictMode>
 );
