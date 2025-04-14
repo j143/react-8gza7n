@@ -2,6 +2,7 @@
   "name": "react",
   "version": "0.0.0",
   "private": true,
+  "homepage": "https://j143.github.io/react-8gza7n",
   "dependencies": {
     "lucide-react": "^0.447.0",
     "react": "18.1.0",

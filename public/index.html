@@ -1,1 +1,27 @@
-<div id="root"></div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <title>React App</title>
+  <script>
+    (function() {
+      // Retrieve the URL the user was trying to access
+      var redirect = sessionStorage.redirect;
+      // Remove the redirect from sessionStorage
+      delete sessionStorage.redirect;
+      // If we have a redirect value, and it's not the current page
+      if (redirect && redirect !== window.location.href) {
+        // Update the history entry to the redirect URL
+        window.history.replaceState(null, null, redirect);
+      }
+    })();
+  </script>
+</head>
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+</body>
+</html>
